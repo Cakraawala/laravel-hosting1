@@ -16,12 +16,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::factory(3)->create();
-        // User::create([
-        //     'name' => 'Angger cakra',
-        //     'email' => 'Angger@gmail.com',
-        //     'password' => bcrypt('301005')
-        // ]);
+        User::factory(4)->create();
+        User::create([
+            'name' => 'Angger cakra',
+            'username' => 'cakrawalaa',
+            'email' => 'Angger@gmail.com',
+            'password' => bcrypt('301005')
+        ]);
         // User::create([
         //     'name' => 'cakrawala',
         //     'email' => 'Anggercakra@gmail.com',
@@ -29,16 +30,56 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         Category::create([
-            'name' => 'Web Programming',
-            'slug' => 'web-programming'
+            'name' => 'Universe',
+            'slug' => 'universe'
         ]);
 
         Category::create([
-            'name' => 'Personal',
-            'slug' => 'Personal'
+            'name' => 'Beach',
+            'slug' => 'beach'
+        ]);
+        Category::create([
+            'name' => 'Islands',
+            'slug' => 'islands'
         ]);
 
-        Post::factory(20)->create();
+        Category::create([
+            'name' => 'Ocean',
+            'slug' => 'ocean'
+        ]);
+        Category::create([
+            'name' => 'Tropic',
+            'slug' => 'tropic'
+        ]);
+
+        Category::create([
+            'name' => 'Sky',
+            'slug' => 'sky'
+        ]);
+        Category::create([
+            'name' => 'Web Programming',
+            'slug' => 'web-programming'
+        ]);
+        Category::create([
+            'name' => 'Esports',
+            'slug' => 'esports'
+        ]);
+        Category::create([
+            'name' => 'Technology',
+            'slug' => 'tech'
+        ]);
+        Category::create([
+            'name' => 'Robot',
+            'slug' => 'robot'
+        ]);
+        Category::create([
+            'name' => 'Computer',
+            'slug' => 'computer'
+        ]);
+        Category::create([
+            'name' => 'Gadget',
+            'slug' => 'gadget'
+        ]);
 
         // Post::create([
         //     'title' => 'Judul pertama',
